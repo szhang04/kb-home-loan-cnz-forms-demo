@@ -1,0 +1,575 @@
+html {overflow: hidden;}
+
+/* Navigation bar */
+
+#start-button {
+    font-size: 20px;
+
+}
+
+input[type="datetime-local"]:invalid {
+    border: 1px solid lightgrey !important;
+}
+
+button.dropbtn {
+    color: grey !important;
+}
+
+.padded-top {
+    margin-top: 15px !important;
+}
+
+.close span {
+    padding-right: 5px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: static !important;
+    border-radius: unset !important;
+    border: 0 !important;
+  }
+
+.navbar a {
+float: left;
+font-size: 12px;
+color: white;
+text-align: center;
+padding: 7px 8px;
+text-decoration: none;
+}
+
+
+.navbar .logo {padding-left: 5px;}
+.navbar .logo a {padding: 11px 16px;}
+.navbar .logo a:hover {background-color: unset;}
+.navbar .logo a img {max-width: 40px;}
+
+
+.navbar .top-right{ float: right}
+  
+  .dropdown-wrap {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown-wrap .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px 8px;
+    padding-left: 8px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 45px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.navbar {
+    margin-left: 15px;
+    min-height: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+  .navbar .top-right  > a{ color: white !important; text-decoration: none;}
+
+  .navbar a:hover, .dropdown-wrap:hover .dropbtn {
+    background-color: #faf6f2;
+    text-decoration: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 12px;
+    border-radius:3px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: grey !important;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown-content a.border-bottom {
+    border-bottom: 1px solid rgb(218, 218, 218);
+  }
+  
+  .dropdown-wrap:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a span {
+    float: right;
+  }
+
+  .dropdown-content a .checked {
+    float: none;
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 12px;
+    width: 6px;
+    margin-left: 5%; 
+    border-bottom: 3px solid #78b13f;
+    border-right: 3px solid #78b13f;
+  }
+
+  .dropdown-content a .unchecked{
+    float: none;
+  }
+/* Navigation bar */
+
+#myTabContent {
+    height: calc(100% - 145px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/* Firfox specific CSS - this CSS is only used in firefox browser*/
+@-moz-document url-prefix() {
+  #myTabContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 82%;
+  }
+}
+
+
+
+/* #myTabContent::-webkit-scrollbar, #output::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+/* } */
+
+
+.lixi-inactive, button.lixi-inactive{
+    display: none !important;
+}
+
+li.nav-item {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+h4 {
+    font-weight: bold !important;
+}
+
+/* ul#myTab, li.nav-item {
+    background-color: #f5f5f5;
+} */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1250px !important; 
+    }
+
+}
+.container {
+    width: 1170px;
+}
+
+.lixi-text {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+/* li.nav-item {
+    background-color: #8080800c;
+} */
+
+.xpath-undefined {
+    background-color: #f29b3e !important;
+}
+
+.xml-display {
+    /* position: fixed !important; */
+    top: 15px;
+    height: 97vh; 
+    right: 5px;
+    border: none;
+    /* border: 1px solid rgb(175, 175, 175); */
+    /* width: 100%; */
+}
+
+.xml-hide {
+    display: none !important;
+}
+
+#myTabContent {
+    margin-top: 20px;
+}
+
+#output {
+    height: 97vh; 
+}
+
+#top-buttons {
+    position: fixed;
+    top: 5px;
+    /* left: 20px; */
+    background-color: rgba(255, 255, 255, 0.664);
+    z-index: 1;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(240, 139, 29)  !important;
+    border-color: #e08422 !important;
+}
+
+a {
+    color: #af6618 !important;
+    text-decoration: none;
+}
+
+.panel-default>.panel-heading {
+    /* color: #333;
+    background-color: #dd903e2e  !important;
+    border-color: #ddd; */
+
+    background-color:rgb(240, 139, 29)  !important;
+}
+
+.panel-btn{float: right}
+
+.panel-btn > * {border: none !important; 
+                padding: 0px 10px !important;}
+
+.panel-btn > a {
+    font-weight: 900;
+    color: black !important;
+    opacity: .55;
+}
+
+.panel-btn > a.collapsed{
+    transform: rotate(90deg);
+    transition: transform 0.3s linear;
+  
+}
+  
+.panel-btn > a{
+    transform: rotate(-90deg);
+    transition: transform 0.3s linear;
+}
+
+.panel {
+    margin-bottom: 10px !important;
+}
+
+.form-group {
+    margin-bottom: 10px !important; 
+}
+
+
+.lixi-close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .5;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.lixi-close:hover {
+    opacity: 1;
+}
+
+#heading {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    vertical-align: baseline;
+}
+
+#heading img {
+    height: 32px;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h1 {
+    color: #57330d !important;
+}
+
+h4 {
+        font-weight: bold !important;
+        text-shadow: 0 .5px 0 white;
+        opacity: 0.9;  
+        color: black;  
+}
+
+.btn-primary b {
+    font-weight: bold !important;
+    text-shadow: 0 .5px 0 white;
+    opacity: 0.6;  
+    color: black;  
+}
+
+.btn-primary:hover b {
+    font-weight: bold !important;
+    text-shadow: 0 .5px 0 white;
+    opacity: 0.9;  
+    color: black;  
+} 
+
+h3 {
+    margin-top: 10px !important;
+}
+
+h1 img {
+    padding-bottom: 13px;
+}
+
+.lixi-ui-disabled {
+    opacity: .1;
+    pointer-events: none;
+}
+
+#lixi-loading-spinner {
+    position: fixed;
+    top: 48%;
+    left: 48%;
+    z-index: 1;
+    width: 4%;
+    animation: spin 2s infinite;
+    opacity: 0.8;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+ span.information {
+    background-color: rgba(0, 0, 0, 0.212);
+    font-size: 14px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.61);
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: inherit;
+}
+
+span.information:hover {
+    background-color: #ed8a0094;
+}
+
+
+input:invalid {
+    border: 2px dashed red;
+}
+
+/* input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+} */
+/* input:valid {
+    border: 2px solid black;
+} */
+
+button.btn.btn-md.col-md-12.dependant.active.lixi-active, button.btn.lixi-active {
+  margin-top: 10px !important; 
+}
+
+button.btn.btn-md {
+    margin-top: 12px !important;
+}
+
+/* -------------------------------RIGHT PANEL--------------------------------------  */
+#right-panel {width: 100%;}
+.display-hide {display: none !important;}
+
+#form-column {
+    height: 97%;
+    overflow: hidden;
+    display: flex;
+}
+#form-column > #form-wrap {
+    flex: none;
+}
+#form-column > #show-code-container {
+    flex: 1;
+}
+.resize-handle--x {
+    flex: none;
+    position: relative;
+    box-sizing: border-box;
+    width: 5px;
+    height: 100%;
+    cursor: w-resize;
+    border-left: 1px solid #ddd;
+    -webkit-touch-callout: none;
+    user-select: none;
+    float: left;
+}
+.resize-handle--x:hover, .resize-handle--x:active {
+    border-color: lightblue;
+    border-style: double; 
+}
+
+.resize-show {display: block; }
+.resize-hide {display: none !important;}
+
+#show-code-container{
+    padding-left: 15px;
+    width: inherit;
+    overflow-y: auto;
+}
+
+#highlight{
+    height: calc(100% - 16px) !important;
+    /* height: -moz-available;          
+    height: -webkit-fill-available; 
+    height: fill-available; */
+}
+/* ----------------------------------LIXI SHARD-------------------------------  */
+.resize-handle--y{
+    flex: none;
+    position: relative;
+    box-sizing: border-box;
+    height: 10px;
+    width: 100%;
+    cursor: s-resize;
+    border-top: 1px solid #ddd;
+    -webkit-touch-callout: none;
+    user-select: none;
+    float: left;
+    z-index: 0;
+}
+
+#show-shard-container{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+#lixi-shard-message{
+    padding: 23px 12px;
+    width: 100%;
+    height: 100%;
+    min-height: -webkit-fill-available;
+    box-sizing: border-box;
+    background-color: #f5f2f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-y: scroll;
+    resize: none;
+}
+
+#lixi-shard-message > p.tooltip:not(:last-child){
+    border-bottom: solid 1px #999;
+}
+
+#lixi-shard-message p.tooltip {
+    margin: 0 0;
+    padding: 5px 5px;
+    width: 100%;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    z-index: 1;
+}
+
+#lixi-shard-message > p.tooltip:first-child{
+    border: 2px solid #00000080 !important;
+    background-color: rgb(0, 153, 255, 0.15);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 8px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    z-index: 2;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  :not(pre) > code[class*="language-lixi-shard"]{
+    background-color: transparent !important;
+    
+  }
+
+  :not(pre) > code[class*="language-lixi-shard"] span{
+    text-shadow: none !important;
+}
+/* ---------------------------------------------------------------------  */
+
+a.btn.btn-primary {
+    font-size: 18PX;
+    margin-top: -3px;
+    opacity: .5;
+}
+
+a.btn.btn-primary:hover {
+    opacity: .9;
+}
+
+a {
+    cursor: pointer;
+}
+
+embed, iframe, textarea {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------- */
+.modal-title {
+    width: fit-content;
+}

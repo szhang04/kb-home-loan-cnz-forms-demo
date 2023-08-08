@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@oozcitak/dom": "^1.15.10",
+    "@oozcitak/util": "^8.3.9",
+    "jxon": "^2.0.0-beta.5",
+    "minimist": "^1.2.5",
+    "xmlbuilder2": "^2.4.0",
+    "xmllint": "^0.1.1",
+    "xpath": "^0.0.32"
+  }
+}

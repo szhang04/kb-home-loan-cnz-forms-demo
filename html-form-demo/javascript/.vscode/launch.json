@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "VAL",
+            "program": "XML_from_XPath.js",
+            "args": [
+                "--input_csv_path",
+                "../../mapping-csv/mapping-VAL.csv"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "CAL",
+            "program": "XML_from_XPath.js",
+            "args": [
+                "--input_csv_path",
+                "../../mapping-csv/mapping-CAL.csv"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ELEM",
+            "program": "XML_from_XPath.js",
+            "args": [
+                "--input_csv_path",
+                "../../mapping-csv/mapping-ELEMENTS.csv"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "JS-TEST",
+            "program": "XML_from_XPath.js",
+            "args": [
+                "--input_csv_path",
+                "../../mapping-csv/mapping-TEST.csv"
+            ]
+        }
+    ]
+}
