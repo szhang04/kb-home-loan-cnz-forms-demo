@@ -1,4 +1,5 @@
-function call_lending_api_validate() {
-    alert("Button clicked!");
-    // Add your custom logic here
+function OpenSubmitModal() {
+    $("#openModalButton").click(function () {
+        $("#submit").modal("show"); // Show the modal
+    });
 }
