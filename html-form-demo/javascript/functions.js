@@ -695,7 +695,7 @@ function UploadAttachment_XML(xpath) {
 }
 
 function SubmitToAPI_Copy() {
-  apikey = document.getElementById("api-key").value;
+  var apikey = document.getElementById("api-key").value;
   if (apikey == "") {
     alert("Please contact LIXI for an API Key.");
     return;
