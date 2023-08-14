@@ -8,11 +8,14 @@ const getToken = () => {
   return document.getElementById("api-key").value;
 };
 
+const getUrl = () => {
+  return document.getElementById("api-url").value;
+};
+
 const sendPostRequestToLendingAPI = (jsonData) => {
-  var testToken = getToken();
   $.ajax({
     type: "POST",
-    url: "https://lending-service-chong.apps.5e06.cip-non-production.nonprod.internal.aws.kiwibank.co.nz/HomeLoan/v1",
+    url: getUrl(),
     data: jsonData,
     headers: {
       "Content-Type": "application/json",
@@ -23,11 +26,12 @@ const sendPostRequestToLendingAPI = (jsonData) => {
     success: function (response) {
       alert(
         "The submission of the Home Loan to the Kiwi Bank Lending API has been successful! \n\nActivate Application Number is " +
-          response.activateApplicationNumber
+          response.activateApplicationNumber +
+          "."
       );
     },
     error: function (error) {
-      alert("POST request failed: " + error.responseText);
+      alert("The submission request failed: " + error.responseText);
     },
   });
 };
@@ -63,5 +67,3 @@ const UUIDGeneratorBrowser = () =>
       (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
     ).toString(16)
   );
-
-const ConvertJsonPropertiesToPascalCase = (jsonObject) => {};
