@@ -1,4 +1,8 @@
+const LendingAPIUrl =
+  "https://lending-service-chong.apps.5e06.cip-non-production.nonprod.internal.aws.kiwibank.co.nz/HomeLoan/v1";
+
 const OpenSubmitModal = () => {
+  $("#api-url").val(LendingAPIUrl);
   $("#openModalButton").click(function () {
     $("#submit").modal("show"); // Show the modal
   });
@@ -12,6 +16,22 @@ const getUrl = () => {
   return document.getElementById("api-url").value;
 };
 
+const setActivateAppNumber = (activateApplicationNumber) => {
+  $("#activate-application-number").val(activateApplicationNumber);
+};
+const setErrorMessage = (errorMessage) => {
+  $("#submission-error").text(errorMessage);
+};
+
+const displaySuccessfulMessage = (response) => {
+  setActivateAppNumber(response.activateApplicationNumber);
+  $("#submit-successful").modal("show");
+};
+
+const displayErrorMessage = (error) => {
+  setErrorMessage(error.responseText);
+  $("#submit-unsuccessful").modal("show");
+};
 const sendPostRequestToLendingAPI = (jsonData) => {
   $.ajax({
     type: "POST",
@@ -24,14 +44,10 @@ const sendPostRequestToLendingAPI = (jsonData) => {
     },
 
     success: function (response) {
-      alert(
-        "The submission of the Home Loan to the Kiwi Bank Lending API has been successful! \n\nActivate Application Number is " +
-          response.activateApplicationNumber +
-          "."
-      );
+      displaySuccessfulMessage(response);
     },
     error: function (error) {
-      alert("The submission request failed: " + error.responseText);
+      displayErrorMessage(error);
     },
   });
 };
