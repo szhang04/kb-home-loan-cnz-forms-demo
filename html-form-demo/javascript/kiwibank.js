@@ -12,19 +12,17 @@ const sendPostRequestToLendingAPI = (jsonData) => {
   var testToken = getToken();
   $.ajax({
     type: "POST",
-    url: "http://localhost:5013/homeloan/v1",
-    // url: "https://lending-service-integrate.apps.5e06.cip-non-production.nonprod.internal.aws.kiwibank.co.nz/HomeLoan/v1",
+    url: "https://lending-service-chong.apps.5e06.cip-non-production.nonprod.internal.aws.kiwibank.co.nz/HomeLoan/v1",
     data: jsonData,
     headers: {
       "Content-Type": "application/json",
       "kb-api-consumer-id": "demo",
       "kb-api-correlation-id": "demo",
-      Authorization: "Bearer " + getToken(),
     },
 
     success: function (response) {
       alert(
-        "POST request successful: Activate Application Nuber is" +
+        "The submission of the Home Loan to the Kiwi Bank Lending API has been successful! \n\nActivate Application Number is " +
           response.activateApplicationNumber
       );
     },
@@ -49,11 +47,8 @@ const FixRequestJson = (json) => {
 
 const SubmitToAPI = () => {
   DisableInterface();
-  var apikey = getToken();
   var converted_json = create_json(xml_string);
-  //var test = xml_string;
   var jsonObject = JSON.parse(converted_json);
-
   var lendingRequest = FixRequestJson(jsonObject);
   var jsonString = JSON.stringify(lendingRequest);
 
