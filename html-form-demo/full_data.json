@@ -1,0 +1,279 @@
+{
+    "Package": {
+        "@ProductionData": "No",
+        "Content": {
+            "Application": {
+                "@ProductionData": "No",
+				"Overview": {
+                    "@BrokerApplicationReferenceNumber": "{{$guid}}",
+                    "@ExpectedSettlementDate": "2023-08-24"
+                },
+                "Address": [
+                    {
+                        "@City": "Auckland",
+                        "@Country": "NZ",
+                        "@NewZealandPostCode": "2019",
+                        "@Type": "Standard",
+                        "@UniqueID": "xa65b8ab12f5",
+                        "Standard": {
+                            "@StreetName": "Beltany",
+                            "@StreetNumber": "29",
+                            "@StreetType": "Drive"
+                        }
+                    },
+                    {
+                        "@City": "Auckland",
+                        "@Country": "NZ",
+                        "@NewZealandPostCode": "0632",
+                        "@Type": "Standard",
+                        "@UniqueID": "x636a3869338",
+                        "Standard": {
+                            "@StreetName": "Street",
+                            "@StreetNumber": "33",
+                            "@StreetType": "Access"
+                        }
+                    }
+                ],
+                "ContributionFunds": [
+                    {
+                        "@Amount": 200000,
+                        "@Type": "First Home Owner Grant"
+                    }
+                ],
+                "Household": [
+                    {
+                        "@Name": "29 Beltany Drive",
+                        "@NumberOfAdults": 2,
+                        "@NumberOfDependants": 3,
+                        "@SequenceNumber": 1,
+                        "Dependant": [
+                            {
+                                "@Age": 2,
+                                "@DateOfBirth": "2020-03-03",
+                                "@Name": "Keilah",
+                                "@SequenceNumber": 1
+                            },
+                            {
+                                "@Age": 9,
+                                "@DateOfBirth": "2013-04-04",
+                                "@Name": "Nico Terrobias",
+                                "@SequenceNumber": 2
+                            },
+                            {
+                                "@Age": 12,
+                                "@DateOfBirth": "2010-05-05",
+                                "@Name": "John Medenilla",
+                                "@SequenceNumber": 3
+                            }
+                        ]
+                    }
+                ],
+                "LoanDetails": [
+                    {
+                        "@AmountRequested": 800000,
+                        "@EstimatedSettlementDate": "2023-08-26",
+                        "@ProductName": "Home Loan",
+                        "@UniqueID": "xd8b4c838a37511ed96960242a",
+                        "LendingPurpose": [
+                            {
+                                "@ABSLendingPurposeCode": "ABS-121",
+								"@PurposeOfFunds": "Purchase of Dwelling",
+                                "@PurposeAmount": 800000,
+                                "@SequenceNumber": 1
+                            }
+                        ],
+                        "LoanPurpose": {
+                            "@PrimaryPurpose": "Personal"
+                        },
+                        "Term": {
+                            "@PaymentType": "Principal Interest Fees",
+                            "@PaymentTypeDuration": 30,
+                            "@PaymentTypeUnits": "Years"
+                        }
+                    }
+                ],
+                "NonRealEstateAsset": [
+                    {
+                        "@SequenceNumber": 1,
+                        "@Type": "Financial Asset",
+                        "@UniqueID": "xd81b09f0a37511ed96960242a",
+                        "EstimatedValue": {
+                            "@Value": 60000
+                        },
+                        "FinancialAsset": {
+                            "@Type": "KiwiSaver"
+                        },
+                        "PercentOwned": {
+                            "Owner": [
+                                {
+                                    "@Percent": 100,
+                                    "@SequenceNumber": 1,
+                                    "@x_Party": "xd77f4fd8a37511ed96960242a"
+                                },
+                                {
+                                    "@SequenceNumber": 2
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@SequenceNumber": 2,
+                        "@Type": "Cleaning",
+                        "@UniqueID": "xd81ef45ca37511ed96960242a",
+                        "EstimatedValue": {
+                            "@EstimateBasis": "Applicant Estimate",
+                            "@Value": 10000
+                        },
+                        "PercentOwned": {
+                            "@Proportions": "Not Specified"
+                        }
+                    }
+                ],
+                "PersonApplicant": [
+                    {
+                        "@ApplicantType": "Borrower",
+                        "@DateOfBirth": "1996-04-24",
+                        "@MaritalStatus": "Married",
+                        "@ResidencyStatus": "Permanently in New Zealand",
+                        "@SequenceNumber": 1,
+                        "@UniqueID": "xd77f4fd8a37511ed96960242a",
+                        "Contact": {
+                            "CurrentAddress": {
+                                "@x_ResidentialAddress": "xa65b8ab12f5",
+                                "Duration": {
+                                    "@Length": 5,
+                                    "@Units": "Years"
+                                }
+                            },
+                            "EmailAddress": [
+                                {
+                                    "@Email": "jomar.terrobias@kiwibank.co.nz",
+                                    "@EmailType": "Home"
+                                }
+                            ],
+                            "HomePhone": {
+                                "@NewZealandDialingCode": "09",
+                                "@Number": "87654321"
+                            },
+                            "Mobile": {
+                                "@NewZealandDialingCode": "09",
+                                "@Number": "8765432"
+                            },
+                            "WorkPhone": {
+                                "@NewZealandDialingCode": "021",
+                                "@Number": "1765177"
+                            }
+                        },
+                        "Employment": [
+                            {
+                                "@SequenceNumber": 1,
+                                "SelfEmployed": {
+                                    "@Occupation": "Tennis Player",
+                                    "@StartDate": "2019-01-07",
+                                    "@UniqueID": "xd79dafe6a37511ed96960242a",
+                                    "@x_Employer": "xd77f4fd8a37511ed96960242a",
+                                    "BusinessIncomeYearToDate": {
+                                        "@ProfitAfterTax": 5122783,
+                                        "@ProfitBeforeTax": 2844434,
+                                        "@StartDate": "2019-01-07"
+                                    },
+                                    "Duration": {
+                                        "@Length": 8,
+                                        "@Units": "Years"
+                                    }
+                                }
+                            }
+                        ],
+                        "MaritalStatusDetails": {
+                            "@x_Spouse": "x93a2fecf02e"
+                        },
+                        "PersonName": {
+                            "@FirstName": "Jomar",
+                            "@MiddleNames": "Yutuc",
+                            "@NameTitle": "Mr",
+                            "@Surname": "Terrobias"
+                        },
+                        "ProofOfIdentity": [
+                            {
+                                "@DocumentNumber": "WL1234567",
+                                "@DocumentType": "New Zealand Driver Licence"
+                            }
+                        ]
+                    }
+                ],
+                "RealEstateAsset": [
+                    {
+                        "@PrimaryPurpose": "Owner Occupied",
+                        "@SequenceNumber": 1,
+                        "@Status": "Established",
+                        "@Transaction": "Purchasing",
+                        "@x_Address": "x636a3869338",
+                        "ContractDetails": {
+                            "@DepositPaid": 200000
+                        },
+                        "EstimatedValue": {
+                            "@EstimateBasis": "Certified Valuation",
+                            "@Value": 1000000
+                        },
+                        "PropertyFeatures": [
+                            {
+                                "@NumberOfBathrooms": 3,
+                                "@NumberOfBedrooms": 5,
+                                "@NumberOfFloors": 2
+                            }
+                        ]
+                    }
+                ],
+                "RelatedPerson": [
+                    {
+                        "@DateOfBirth": "2001-02-10",
+                        "@UniqueID": "x93a2fecf02e",
+                        "Contact": {
+                            "@Email": "email@gmail.com",
+                            "HomePhone": {
+                                "@NewZealandDialingCode": "09",
+                                "@Number": "1234567"
+                            },
+                            "Mobile": {
+                                "@NewZealandDialingCode": "021",
+                                "@Number": "1234567"
+                            }
+                        },
+                        "PersonName": {
+                            "@FirstName": "Lady",
+                            "@NameTitle": "Mrs",
+                            "@Surname": "Lady"
+                        }
+                    }
+                ]
+            }
+        },
+        "Instructions": {
+            "ApplicationInstructions": {
+                "Submit": {
+                    "@AssessmentType": "Full",
+                    "@IsAccountVariation": "No",
+                    "@IsResubmission": "No"
+                }
+            }
+        },
+        "Publisher": {
+            "@LIXICode": "UQWDVN6",
+            "@PublishedDateTime": "2023-08-10T22:51:29",
+            "Software": {
+                "@LIXICode": "UQWDVN6",
+                "@Name": "LIXI Customisable Forms"
+            }
+        },
+        "Recipient": [
+            {
+                "@LIXICode": "UQWDVN6"
+            }
+        ],
+        "SchemaVersion": {
+            "@LIXICustomVersion": "dev-wip",
+            "@LIXITransactionType": "CNZ",
+            "@LIXIVersion": "2.1.31"
+        }
+    }
+}
